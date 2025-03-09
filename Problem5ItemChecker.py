@@ -20,7 +20,8 @@ class character:
 
 def taskAbility(taskItems, taskDebuff):
     return all(item in player1.weapons for item in taskItems) and not any(debuff in player1.weaknesses for debuff in taskDebuff)
-    
+    ##The line above checks to make sure all the items needed for the task are there and that none of the weaknesses are there 
+    ##returning true or false if each part works or fails
 player1 = character('','','')
 player1.nickname = 'Dragon Slayer'
 player1.weapons = ['pan', 'paper', 'idea', 'rope', 'groceries']
